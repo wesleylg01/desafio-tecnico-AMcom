@@ -12,20 +12,25 @@ Neste repositório contém as implementações/soluções para as **Questões 1,
 Foi desenvolvida a classe **Consulta de saldo** para ser consumida pelo **Program.cs**, classe foi construída seguindo as seguintes regras:
 
 
---**O número da conta é imutável depois de criada**
+- **O número da conta é imutável depois de criada**
 
---**O nome do titular pode ser alterado**
---**O saldo não pode ser alterado livremente -> ele só aumenta com depósitos e só diminui com saques.**
---**Para cada saque, a instituição cobra uma taxa de $3.50**
---**A conta pode ficar com saldo negativo**
+- **O nome do titular pode ser alterado**
+
+- **O saldo não pode ser alterado livremente -> ele só aumenta com depósitos e só diminui com saques.**
+
+- **Para cada saque, a instituição cobra uma taxa de $3.50**
+
+- **A conta pode ficar com saldo negativo**
 
 ### ✅ Exercício 2
 
 Implementei um programa em C# que faz **chamadas HTTP para a API disponibilizada**, buscando as partidas por ano e por time, e calculando o total de gols marcados.
 
 Fluxo:
---**O programa consulta a API para quando o time joga como team1 e team2**
---**Soma os gols marcados nas duas posições**
+
+- **O programa consulta a API para quando o time joga como team1 e team2**
+
+- **Soma os gols marcados nas duas posições**
 
 Usei a biblioteca **HttpClient** para fazer as requisições e **System.Text.Json** para deserializar os dados.
 
@@ -44,8 +49,10 @@ Implementei o comando SQL conforme solicitado:
 Ele agrupa os **assuntos e anos**, contando a quantidade de **ocorrências** de cada um, e filtra apenas os que têm mais de 3 ocorrências.
 
 Além disso, a consulta ordena os registros por:
---**Ano, de forma decrescente.**
---**Quantidade, também de forma decrescente.**
+
+- **Ano, de forma decrescente.**
+
+- **Quantidade, também de forma decrescente.**
 
 ✅ Comando SQL:
 ```
