@@ -10,7 +10,10 @@ Neste repositório contém as implementações/soluções para as **Questões 1,
 ### ✅ Exercício 1
 
 Foi desenvolvida a classe **Consulta de saldo** para ser consumida pelo **Program.cs**, classe foi construída seguindo as seguintes regras:
+
+
 --**O número da conta é imutável depois de criada**
+
 --**O nome do titular pode ser alterado**
 --**O saldo não pode ser alterado livremente -> ele só aumenta com depósitos e só diminui com saques.**
 --**Para cada saque, a instituição cobra uma taxa de $3.50**
