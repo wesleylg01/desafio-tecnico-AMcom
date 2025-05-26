@@ -35,7 +35,6 @@
 
   <ItemGroup>
     <Folder Include="Application\Commands\Requests\" />
-    <Folder Include="Application\Handlers\" />
     <Folder Include="Application\Queries\Requests\" />
     <Folder Include="Domain\Language\" />
     <Folder Include="Infrastructure\Database\CommandStore\Requests\" />

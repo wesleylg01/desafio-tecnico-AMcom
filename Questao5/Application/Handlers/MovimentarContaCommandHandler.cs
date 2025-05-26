@@ -1,12 +1,13 @@
 ﻿using MediatR;
 using Microsoft.OpenApi.Extensions;
+using Questao5.Application.Commands;
 using Questao5.Application.Commands.Responses;
 using Questao5.Domain.Enumerators;
 using Questao5.Domain.Exceptions;
 using Questao5.Infrastructure.Database.CommandStore;
 using Questao5.Infrastructure.Database.QueryStore;
 
-namespace Questao5.Application.Commands
+namespace Questao5.Application.Handlers
 {
     public class MovimentarContaCommandHandler : IRequestHandler<MovimentarContaCommand, MovimentarContaResponse>
     {

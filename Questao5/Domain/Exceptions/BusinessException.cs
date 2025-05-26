@@ -5,11 +5,11 @@ namespace Questao5.Domain.Exceptions
 {
     public class BusinessException : InvalidOperationException
     {
-        public BusinessErrorType businessErrorType { get; }
+        public BusinessErrorType BusinessErrorType { get; }
         public BusinessException(BusinessErrorType errorType)
             : base($"{errorType} - {errorType.GetDescription()}")
         {
-            businessErrorType = errorType;
+            BusinessErrorType = errorType;
         }
     }
 }

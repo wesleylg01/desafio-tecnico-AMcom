@@ -1,10 +1,11 @@
 ﻿using MediatR;
+using Questao5.Application.Queries;
 using Questao5.Application.Queries.Responses;
 using Questao5.Domain.Enumerators;
 using Questao5.Domain.Exceptions;
 using Questao5.Infrastructure.Database.QueryStore;
 
-namespace Questao5.Application.Queries
+namespace Questao5.Application.Handlers
 {
     public class ConsultarSaldoQueryHandler : IRequestHandler<ConsultarSaldoQuery, ConsultarSaldoResponse>
     {
