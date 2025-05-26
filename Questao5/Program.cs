@@ -1,5 +1,11 @@
 using MediatR;
+using Microsoft.Data.Sqlite;
+using Questao5.Application.Commands;
+using Questao5.Application.Queries;
+using Questao5.Infrastructure.Database.CommandStore;
+using Questao5.Infrastructure.Database.QueryStore;
 using Questao5.Infrastructure.Sqlite;
+using System.Data;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +21,26 @@ builder.Services.AddSingleton<IDatabaseBootstrap, DatabaseBootstrap>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    options.IncludeXmlComments(xmlPath);
+});
+
+builder.Services.AddScoped<IContaCorrenteQueryStore, ContaCorrenteQueryStore>();
+builder.Services.AddScoped<ConsultarSaldoQuery>();
+
+builder.Services.AddScoped<MovimentarContaCommand>();
+builder.Services.AddScoped<IContaCorrenteCommandStore, ContaCorrenteCommandStore>();
+
+builder.Services.AddScoped<IDbConnection>(sp =>
+{
+    var config = sp.GetRequiredService<DatabaseConfig>();
+    var connection = new SqliteConnection(config.Name);
+    connection.Open();
+    return connection;
+});
 
 var app = builder.Build();
 
