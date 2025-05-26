@@ -20,7 +20,7 @@ namespace Questao5.Infrastructure.Services.Controllers
         /// <summary>
         /// Realiza uma movimentação na conta corrente.
         /// </summary>
-        /// <param name="command">Dados da movimentação: id da conta, valor, tipo e chave de idempotência.</param>
+        /// <param name="command">Dados da movimentação: id da requisição, id da conta, valor, tipo e chave de idempotência.</param>
         /// <returns>Identificador da movimentação realizada.</returns>
         /// <response code="200">Movimentação realizada com sucesso.</response>
         /// <response code="400">Erro de validação ou regra de negócio violada.</response>
