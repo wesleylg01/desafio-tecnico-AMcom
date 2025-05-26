@@ -45,7 +45,7 @@ Além disso, a consulta ordena os registros por:
 --**Quantidade, também de forma decrescente.**
 
 ✅ Comando SQL:
-
+```
 SELECT 
     assunto, 
     ano, 
@@ -60,8 +60,7 @@ HAVING
 ORDER BY 
     ano DESC, 
     quantidade DESC;
-
-
+```
 ### ✅ Exercício 5
 
 ✅ Criar uma **API REST** com:
