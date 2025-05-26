@@ -1,9 +1,9 @@
 
-# ✅ Desafio Técnico - Amcom/Ailos
+# ✅ Desafio Técnico - Amcom - Ailos
 
 ## 📋 Descrição
 
-Neste repositório contém as implementação/soluções para as **Questões 1, 2 , 3, 4 e 5** do desafio técnico, que consiste em:
+Neste repositório contém as implementações/soluções para as **Questões 1, 2 , 3, 4 e 5** do desafio técnico, que consiste nos 5 exercícios abaixo:
 
 ## ✅ Questões
 
@@ -36,7 +36,7 @@ A resposta correta é:
 
 ### ✅ Exercício 4
 
-Implementei o comando SQL conforme solicitado.
+Implementei o comando SQL conforme solicitado:
 
 Ele agrupa os **assuntos e anos**, contando a quantidade de **ocorrências** de cada um, e filtra apenas os que têm mais de 3 ocorrências.
 
